@@ -1,17 +1,42 @@
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        getNameSeason();
+    }
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    public static String getNameSeason()
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number: ");
+        int number = input.nextInt();
+        String Season;
+        switch (number) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+            case 1:
+                Season = "Winter";
+                break;
+
+            case 2:
+                Season = "Spring";
+                break;
+
+            case 3:
+                Season = "Summer";
+                break;
+
+            case 4:
+                Season = "Autumn";
+                break;
+
+            default:
+                Season = "Sorry please try another Number";
+                break;
+
         }
+        System.out.println("Message: " + Season);
+        return Season;
     }
 }

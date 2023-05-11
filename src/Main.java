@@ -11,7 +11,8 @@ public class Main {
         //getWether();
         //getColorRainbow();
         //getOddNumber();
-        getRevers();
+        //getRevers();
+        getSum();
     }
 
     // Control structures. Number 1
@@ -139,20 +140,35 @@ public class Main {
         }
         System.out.println("Color: " + Rainbow);
     }
+
     // loop. Number 1
     public static void getOddNumber() {
-        for(int i = 1; i <=99; i++){
-            if (i%2!=0)
-            System.out.println(i);
-        }
-    }
-    // loop. Number 2
-    public static void getRevers(){
-        for(int i = 5; i >=1; i--){
+        for (int i = 1; i <= 99; i++) {
+            if (i % 2 != 0)
                 System.out.println(i);
         }
     }
-}
+
+    // loop. Number 2
+    public static void getRevers() {
+        for (int i = 5; i >= 1; i--) {
+            System.out.println(i);
+        }
+    }
+    // loop. Number 3
+    public static void getSum() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int n = input.nextInt();
+        int sum = 0;
+        for(int i=1; i<n; i++)
+            sum+=i;
+        System.out.println("Result = " + sum);
+        }
+    }
+
+
+
 
 
 

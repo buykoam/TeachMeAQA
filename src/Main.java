@@ -6,19 +6,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //getNameSeason();
-        //getSeasonTwoMethod();
-        getEvenlyOddNumber();
+        getSeasonTwoMethod();
+        //getEvenlyOddNumber();
+        // getWether();
     }
-// Control structures. Number 1
-    public static String getNameSeason()
-    {
+
+    // Control structures. Number 1
+    public static String getNameSeason() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the Number: ");
         int number = input.nextInt();
         String Season;
         switch (number) {
 
-            case 1, 2, 12 :
+            case 1, 2, 12:
                 Season = "Winter";
                 break;
 
@@ -42,38 +43,33 @@ public class Main {
         System.out.println("Message: " + Season);
         return Season;
     }
+
     // Control structures. Number 2
     public static String getSeasonTwoMethod() {
         Scanner z = new Scanner(System.in);
         System.out.print("Enter the Number: ");
         int number = z.nextInt();
 
-        if (number <= 2 && number == 12)
-        {
+        if (number <= 2 || number == 12) {
             System.out.println("Winter");
         }
 
-        if (number >2 && number <=5)
-        {
+        else if (number > 2 && number <= 5) {
             System.out.println("Spring");
         }
 
-        if (number >5 && number <=8)
-        {
+        else if (number > 5 && number <= 8) {
             System.out.println("Summer");
         }
 
-        if (number >8 && number <=11)
-        {
+        else if (number > 8 && number <= 11) {
             System.out.println("Autumn");
-        }
-
-        else
-        {
+        } else {
             System.out.println("Sorry please try another Number");
         }
         return null;
     }
+
     // Control structures. Number 3
     public static void getEvenlyOddNumber() {
         Scanner x = new Scanner(System.in);
@@ -87,16 +83,18 @@ public class Main {
     }
 
     // Control structures. Number 4
-    public static void getWether()
-    {
+    public static void getWether() {
         Scanner x = new Scanner(System.in);
         System.out.print("Enter the temperature: ");
         int t = x.nextInt();
         String temperature;
-        if (t >-5) {
-            System.out.println("Тепло");
-        }  else if (t >=5 && t > -20){
-            System.out.println("«Нормально");
+        if (t > -5) {
+            System.out.println("Hot");
+        } if (t >= - 5 || t > -20) {
+            System.out.println("Normal");
+        }
+        if (t > -20) {
+            System.out.println("Cold");
         }
 
     }

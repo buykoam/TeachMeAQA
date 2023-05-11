@@ -8,7 +8,8 @@ public class Main {
         //getNameSeason();
         //getSeasonTwoMethod();
         //getEvenlyOddNumber();
-        getWether();
+        //getWether();
+        getColorRainbow();
     }
 
     // Control structures. Number 1
@@ -40,7 +41,7 @@ public class Main {
                 break;
 
         }
-        System.out.println("Message: " + Season);
+        System.out.println("Season " + Season);
         return Season;
     }
 
@@ -52,17 +53,11 @@ public class Main {
 
         if (number <= 2 || number == 12) {
             System.out.println("Winter");
-        }
-
-        else if (number > 2 && number <= 5) {
+        } else if (number > 2 && number <= 5) {
             System.out.println("Spring");
-        }
-
-        else if (number > 5 && number <= 8) {
+        } else if (number > 5 && number <= 8) {
             System.out.println("Summer");
-        }
-
-        else if (number > 8 && number <= 11) {
+        } else if (number > 8 && number <= 11) {
             System.out.println("Autumn");
         } else {
             System.out.println("Sorry please try another Number");
@@ -90,17 +85,58 @@ public class Main {
         String temperature;
         if (t > -5) {
             System.out.println("Hot");
-        } else if ((t <= - 5) && (t > -20)) {
+        } else if ((t <= -5) && (t > -20)) {
             System.out.println("Normal");
-        }
-        else if (t <= -20) {
+        } else if (t <= -20) {
             System.out.println("Cold");
-        }
-        else {
+        } else {
             System.out.println("Sorry please try another Number");
         }
-
-
     }
+    // Control structures. Number 5
 
+    public static void getColorRainbow() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number: ");
+        int number = input.nextInt();
+        String Rainbow;
+        switch (number) {
+
+            case 1:
+                Rainbow = "Red";
+                break;
+
+            case 2:
+                Rainbow = "Orange";
+                break;
+
+            case 3:
+                Rainbow = "Yellow";
+                break;
+
+            case 4:
+                Rainbow = "Green";
+                break;
+            case 5:
+                Rainbow = "Blue";
+                break;
+            case 6:
+                Rainbow = "Indigo";
+                break;
+            case 7:
+                Rainbow = "Violet";
+                break;
+
+            default:
+                Rainbow = "Sorry please try another Number";
+                break;
+
+        }
+        System.out.println("Color: " + Rainbow);
+    }
 }
+
+
+
+
+

@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //getNameSeason();
-        getSeasonTwoMethod();
+        //getSeasonTwoMethod();
         //getEvenlyOddNumber();
-        // getWether();
+        getWether();
     }
 
     // Control structures. Number 1
@@ -90,12 +90,16 @@ public class Main {
         String temperature;
         if (t > -5) {
             System.out.println("Hot");
-        } if (t >= - 5 || t > -20) {
+        } else if ((t <= - 5) && (t > -20)) {
             System.out.println("Normal");
         }
-        if (t > -20) {
+        else if (t <= -20) {
             System.out.println("Cold");
         }
+        else {
+            System.out.println("Sorry please try another Number");
+        }
+
 
     }
 

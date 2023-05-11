@@ -9,7 +9,9 @@ public class Main {
         //getSeasonTwoMethod();
         //getEvenlyOddNumber();
         //getWether();
-        getColorRainbow();
+        //getColorRainbow();
+        //getOddNumber();
+        getRevers();
     }
 
     // Control structures. Number 1
@@ -117,12 +119,15 @@ public class Main {
             case 4:
                 Rainbow = "Green";
                 break;
+
             case 5:
                 Rainbow = "Blue";
                 break;
+
             case 6:
                 Rainbow = "Indigo";
                 break;
+
             case 7:
                 Rainbow = "Violet";
                 break;
@@ -133,6 +138,19 @@ public class Main {
 
         }
         System.out.println("Color: " + Rainbow);
+    }
+    // loop. Number 1
+    public static void getOddNumber() {
+        for(int i = 1; i <=99; i++){
+            if (i%2!=0)
+            System.out.println(i);
+        }
+    }
+    // loop. Number 2
+    public static void getRevers(){
+        for(int i = 5; i >=1; i--){
+                System.out.println(i);
+        }
     }
 }
 

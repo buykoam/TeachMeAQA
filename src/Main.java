@@ -12,7 +12,9 @@ public class Main {
         //getColorRainbow();
         //getOddNumber();
         //getRevers();
-        getSum();
+        //getSum();
+        //getSequenceOfNumbers();
+        get();
     }
 
     // Control structures. Number 1
@@ -155,17 +157,37 @@ public class Main {
             System.out.println(i);
         }
     }
+
     // loop. Number 3
     public static void getSum() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int n = input.nextInt();
         int sum = 0;
-        for(int i=1; i<n; i++)
-            sum+=i;
+        for (int i = 1; i < n; i++)
+            sum += i;
         System.out.println("Result = " + sum);
+    }
+
+    public static void getSequenceOfNumbers() {
+        int i = 7;
+        while (i <= 98) {
+
+            System.out.println(i);
+            i += 7;
         }
     }
+
+    public static void get() {
+        int i = 0;
+        while (i <= -50) {
+
+            System.out.println(i);
+            i -= 5;
+        }
+    }
+}
+
 
 
 

@@ -5,16 +5,16 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        //getNameSeason();
-        //getSeasonTwoMethod();
-        //getEvenlyOddNumber();
-        //getWether();
-        //getColorRainbow();
-        //getOddNumber();
-        //getRevers();
-        //getSum();
-        //getSequenceOfNumbers();
-        //getSequence();
+        getNameSeason();
+        getSeasonTwoMethod();
+        getEvenlyOddNumber();
+        getWether();
+        getColorRainbow();
+        getOddNumber();
+        getRevers();
+        getSum();
+        getSequenceOfNumbers();
+        getSequence();
         getSquaresOfNumbers();
     }
 

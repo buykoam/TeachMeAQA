@@ -14,7 +14,8 @@ public class Main {
         //getRevers();
         //getSum();
         //getSequenceOfNumbers();
-        get();
+        //getSequence();
+        getSquaresOfNumbers();
     }
 
     // Control structures. Number 1
@@ -168,7 +169,7 @@ public class Main {
             sum += i;
         System.out.println("Result = " + sum);
     }
-
+    // loop. Number 4
     public static void getSequenceOfNumbers() {
         int i = 7;
         while (i <= 98) {
@@ -177,14 +178,20 @@ public class Main {
             i += 7;
         }
     }
-
-    public static void get() {
+    // loop. Number 5
+    public static void getSequence() {
         int i = 0;
         while (i >= -50) {
 
             System.out.println(i);
             i -= 5;
         }
+    }
+    // loop. Number 6
+    public static void getSquaresOfNumbers()
+    {
+        for (int i = 10; i <= 20; i++)
+            System.out.println((int) Math.pow(i, 2));
     }
 }
 

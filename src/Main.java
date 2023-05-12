@@ -95,7 +95,7 @@ public class Main {
         } else if (t <= -20) {
             System.out.println("Cold");
         } else {
-            System.out.println("Sorry please try another Number");
+            System.out.println("Sorry please try another temperature");
         }
     }
     // Control structures. Number 5
@@ -180,7 +180,7 @@ public class Main {
 
     public static void get() {
         int i = 0;
-        while (i <= -50) {
+        while (i >= -50) {
 
             System.out.println(i);
             i -= 5;

@@ -2,16 +2,16 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        getBoard();
+    }
+// Number 1
+    public static void getBoard() {
+        char [][] board = {{'W','B','W','B','W','B','W','B'}, {'B','W','B','W','B','W','B','W'}, {'W','B','W','B','W','B','W','B'}, {'B','W','B','W','B','W','B','W'}, {'W','B','W','B','W','B','W','B'}, {'B','W','B','W','B','W','B','W'}, {'W','B','W','B','W','B','W','B'}, {'B','W','B','W','B','W','B','W'},{'W','B','W','B','W','B','W','B'} };//объявили массив и заполнили его элементами
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                System.out.print(" " + board[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 }

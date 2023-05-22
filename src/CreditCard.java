@@ -26,25 +26,23 @@ class CreditCard {
     public void getSumBalance() {
         System.out.print("Enter sum ");
         Scanner console = new Scanner(System.in);
-        int sum = 0;
-        while (sum<0) {
-            sum += console.nextInt();
+        {
+            balance += console.nextInt();
             System.out.println("Credit Card Holder is " + this.cardHolder);
             System.out.println("Credit Card Number is " + this.cardNumber);
-            System.out.print("Credit Card Balance is " + sum);
+            System.out.print("Credit Card Balance is " + balance);
         }
     }
     public void getWithdrawalOfMoney()
     {
-        System.out.print("Enter sum ");
+        System.out.print("Enter amount ");
         Scanner input = new Scanner(System.in);
-        double amount = 44;
-        while (amount>0) {
-            amount -= input.nextInt();
+         {
+             balance -= input.nextInt();
             System.out.println("Credit Card Holder is " + this.cardHolder);
             System.out.println("Credit Card Number is " + this.cardNumber);
-            System.out.print("Credit Card Balance is " + amount);
-            amount--;
+            System.out.print("Credit Card Balance is " + balance);
+             balance--;
         }
     }
 }

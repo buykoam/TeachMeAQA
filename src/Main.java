@@ -4,12 +4,13 @@ public class Main {
     public static void main(String[] args) {
     CreditCard fist = new CreditCard("Papkova Anastasiya", "4662298480280412", 0);
     CreditCard second = new CreditCard("Buyko Tatyana", "4086416846303938", 0);
-    CreditCard third = new CreditCard("Buyko Mike", "30864168487503938", 0);
-    fist.getCardCreditInfo();
-    second.getCardCreditInfo();
-    fist.getSumBalance();
-    second.getSumBalance();
-    third.getWithdrawalOfMoney();
+    CreditCard third = new CreditCard("Buyko Mike", "30864168487503938", 1200);
+   fist.getCardCreditInfo();
+   second.getCardCreditInfo();
+   third.getCardCreditInfo();
+   fist.getSumBalance();
+   second.getSumBalance();
+   third.getWithdrawalOfMoney();
     }
 
 }

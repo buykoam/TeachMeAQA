@@ -29,6 +29,6 @@ public class Phone {
     {
         System.out.println("Number " + number);
         System.out.println("Model " + model);
-        System.out.println("Weight" +weight);
+        System.out.println("Weight " +weight);
     }
 }

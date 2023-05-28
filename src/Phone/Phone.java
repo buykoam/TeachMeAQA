@@ -5,7 +5,8 @@ public class Phone {
     private String model;
     private double weight;
 
-    public void Phone (int number, String model, double weight)
+
+    public Phone (int number, String model, double weight)
     {
         this.number = number;
         this.model = model;
@@ -22,5 +23,12 @@ public class Phone {
 
     public double getWeight() {
         return weight;
+    }
+
+    public void getInformationPhone()
+    {
+        System.out.println("Number " + number);
+        System.out.println("Model " + model);
+        System.out.println("Weight" +weight);
     }
 }

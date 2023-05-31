@@ -10,10 +10,15 @@ public class Main {
         Phone honor = new Phone(445673465, "Honor 9", 0.80);
 
         sumsung.getInformationPhone();
+        sumsung.receiveCall("Anna");
         System.out.println();
         nokia.getInformationPhone();
+        nokia.receiveCall("Max");
         System.out.println();
         honor.getInformationPhone();
+        honor.receiveCall("Vlad");
+        System.out.println();
+        sumsung.sendMessage("257653456","224579867","334568764");
     }
 
 }

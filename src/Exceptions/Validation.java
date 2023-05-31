@@ -5,13 +5,15 @@ public class Validation {
     private static String massage = "Incorrect password";
     private static String massage2 = "Incorrect login";
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws WrongLoginException, WrongPasswordException {
+        getValidation(enter().nextLine(),enter().nextLine(),enter().nextLine());
         System.out.println("Please enter your login: ");
         String login = enter().nextLine();
         System.out.println("Please enter your password: ");
         String password = enter().nextLine();
         System.out.println("Please confirm your password: ");
         String confirmPassword = enter().nextLine();
+
     }
 
     public static Scanner enter() {
@@ -23,15 +25,14 @@ public class Validation {
         if (login.contains(" ") | login.length() > 20) {
             throw new WrongLoginException(massage2);
         }
-        {
-            if (password.contains(" ") | password.length() > 20) {
-                throw new WrongPasswordException(massage);
-            }
-            if (!confirmPassword.equals(password)) {
-                throw new WrongPasswordException();
-            }
+        if (password.contains(" ") | password.length() > 20) {
+            throw new WrongPasswordException(massage);
+        }
+        if (!confirmPassword.equals(password)) {
+            throw new WrongPasswordException();
         }
     }
 }
+
 
 

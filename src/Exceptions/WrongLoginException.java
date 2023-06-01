@@ -2,11 +2,14 @@ package Exceptions;
 
 public class WrongLoginException extends Exception {
    private String login;
-    public WrongLoginException(String login) {
-        this.login = login;
-    }
+   private String message = "Incorrect login";
     public WrongLoginException()
     {
-        super();
+
+    }
+    public WrongLoginException(String message)
+    {
+        super(message);
+        this.message = message;
     }
 }

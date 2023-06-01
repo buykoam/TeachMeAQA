@@ -5,7 +5,7 @@ public class Validation {
 
     private static String message = "Incorrect password";
     private static String message2 = "Incorrect login";
-
+    private static String message3 = "Password don't match";
     public static void main(String[] args)  throws WrongLoginException, WrongPasswordException {
 
             System.out.println("Please enter your login: ");
@@ -35,7 +35,7 @@ public class Validation {
             throw new WrongPasswordException(message);
         }
         if (!confirmPassword.equals(password)) {
-            throw new WrongPasswordException();
+            throw new WrongPasswordException(message3);
         }
     }
 }

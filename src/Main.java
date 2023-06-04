@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args) {
        // DocNumber.getFourNumbers();
        // DocNumber.replaceLetters();
-        DocNumber.getLettersInLowercase();
+       // DocNumber.getLettersInLowercase();
+        DocNumber.getLettersInUppercase();
     }
 }
 

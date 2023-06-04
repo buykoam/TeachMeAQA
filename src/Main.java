@@ -5,7 +5,8 @@ public class Main {
        // DocNumber.getFourNumbers();
        // DocNumber.replaceLetters();
        // DocNumber.getLettersInLowercase();
-        DocNumber.getLettersInUppercase();
+        // DocNumber.getLettersInUppercase();
+        DocNumber.isStringContainsSubstr();
     }
 }
 

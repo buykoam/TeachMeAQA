@@ -43,14 +43,20 @@ public class DocNumber {
     //класса StringBuilder).
     public static void getLettersInUppercase() {
         StringBuilder str3 = new StringBuilder("1234-abc-5678-DeC-9g0H");
-        // String str3 = "1234-abc-5678-DeC-9g0H";
         StringBuilder subStr;
         String delimeter = "-"; // Разделитель
         subStr = new StringBuilder(str3.substring(5, 8).toUpperCase());
-        StringBuilder subStr2 = new StringBuilder(str3.substring(13, 17).toUpperCase());
+        StringBuilder subStr2 = new StringBuilder(str3.substring(14, 17).toUpperCase());
         StringBuilder subStr3 = new StringBuilder(str3.substring(19, 20).toUpperCase());
         StringBuilder subStr4 = new StringBuilder(str3.substring(21, 22).toUpperCase());
-        System.out.println("DocNumber : " +subStr + '/' + subStr2+ '/' + subStr3 + '/' + subStr4);
+        System.out.println("Letters: : " +subStr + '/' + subStr2+ '/' + subStr3 + '/' + subStr4);
+    }
+    //Проверить содержит ли номер документа последовательность abc и
+    //вывети сообщение содержит или нет(причем, abc и ABC считается
+    //одинаковой последовательностью).
+    public static void isStringContainsSubstr() {
+        boolean s = str.contains("ABC") || str.contains("abc");
+        System.out.println("String contains 'ABC'/'abc' : " + s);
     }
 }
 

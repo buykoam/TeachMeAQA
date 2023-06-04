@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Locale;
 
+
 public class DocNumber {
     static String str = "1234-abc-5678-def-9g0h";
 
@@ -33,7 +34,7 @@ public class DocNumber {
         String[] subStr;
         String delimeter = "-"; // Разделитель
         subStr = str2.split(delimeter);
-        System.out.println("DocNumber : " + subStr[1].toLowerCase() + '/' + subStr[3].toLowerCase());
+        System.out.println("DocNumber : " + subStr[1].toLowerCase() + '/' + subStr[3].toLowerCase()+ '/' + subStr[4].substring(1,2).toLowerCase()+ '/'+ subStr[4].substring(3,4).toLowerCase());
 
     }
 }

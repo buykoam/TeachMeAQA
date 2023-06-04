@@ -6,7 +6,9 @@ public class Main {
        // DocNumber.replaceLetters();
        // DocNumber.getLettersInLowercase();
         // DocNumber.getLettersInUppercase();
-        DocNumber.isStringContainsSubstr();
+        //DocNumber.isStringContainsSubstr();
+       // DocNumber.checkStringBeginning();
+        DocNumber.checkStringEnding();
     }
 }
 

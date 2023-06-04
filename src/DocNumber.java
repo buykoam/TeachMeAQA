@@ -3,7 +3,7 @@ import java.util.Locale;
 
 
 public class DocNumber {
-    static String str = "1234-abc-5678-def-9g0h";
+    static String str = "1234-abc-5678-def-1a2b";
 
     // Вывести на экран в одну строку два первых блока по 4 цифры.
     public static void getFourNumbers() {
@@ -57,6 +57,33 @@ public class DocNumber {
     public static void isStringContainsSubstr() {
         boolean s = str.contains("ABC") || str.contains("abc");
         System.out.println("String contains 'ABC'/'abc' : " + s);
+    }
+    //Проверить начинается ли номер документа с последовательности
+    //555
+    public static void checkStringBeginning() {
+        String[] subStr;
+        String delimeter = "-"; // Разделитель
+        subStr = str.split(delimeter);
+        boolean check = (str.substring(0, 3) == "555");
+        System.out.println("Does the document number start with the sequence '555': "+check);
+    }
+    // Проверить заканчивается ли номер документа на
+    //последовательность 1a2b.
+
+    public static void checkStringEnding() {
+        String str = "1234-abc-5678-def-1a2b";
+        String[] subStr;
+        String delimeter = "-"; // Разделитель
+        subStr = str.split(delimeter);
+        String lastFour = str.substring(str.length()-4);
+        if(lastFour == "1a2b")
+        {
+            System.out.println("The document number end with the sequence '1a2b'");
+        }
+        else
+        {
+            System.out.println("The document number doesn't end with the sequence '1a2b'");
+        }
     }
 }
 

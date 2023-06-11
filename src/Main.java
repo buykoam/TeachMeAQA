@@ -14,9 +14,11 @@ public class Main {
 
             list.add(scanner. nextLine());
 
-            System.out.println(scanner.nextLine());
-
         }
         scanner.close();
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i) + " ");
+        }
     }
+
 }

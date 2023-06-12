@@ -27,41 +27,46 @@ public class Main {
         Scanner infile = new Scanner(new File("D:\\TeachMeAQA\\TeachMeAQA\\src\\words.txt"));
 
         while (infile.hasNextLine()) {
-            tempWord = infile.nextLine();
-            tempDef = infile.nextLine();
+            //tempWord = infile.nextLine();
+           // tempDef = infile.nextLine();
 
   /*here, add code to add tempWord and tempDef
    as an entry in the map
    */
-            treeMap.put(tempWord, tempDef);
-
+          //  treeMap.put(tempWord, tempDef);
+            String str = "";
+            str = infile.nextLine();
+            String[] splitted;
+            splitted = str.split( "-");
+            treeMap.put(splitted[0], splitted[1]);
         }
         infile.close();
+        System.out.println("Key/Value mappings: " + treeMap.entrySet());
 
-        while (true) {
-            System.out.println();
-            System.out.println();
+//        while (true) {
+//            System.out.println();
+//            System.out.println();
+//
+//            //show menu and prompt message
+//            System.out.println("Please select one of the following actions:");
+//            System.out.println("q - Quit");
+//            System.out.println("a - List all words and their definitons");
+//            System.out.println("b - Delete an entry");
+//            System.out.println("Please enter a, b, q: ");
+//
+//            String selection = kb.nextLine();  //read user's selection
+//            if (selection.equals("")) continue; //if selection is "", show menu again
+//
+//            switch (selection.charAt(0)) {
+//                case 'q':
+//                    System.out.println("\nThank you.");
+//                    return;
+//
+//                case 'a':
+//                    for (Object treeKey : treeMap.keySet())
+//                        System.out.println(treeKey);
+//
+//            }
 
-            //show menu and prompt message
-            System.out.println("Please select one of the following actions:");
-            System.out.println("q - Quit");
-            System.out.println("a - List all words and their definitons");
-            System.out.println("b - Delete an entry");
-            System.out.println("Please enter a, b, q: ");
-
-            String selection = kb.nextLine();  //read user's selection
-            if (selection.equals("")) continue; //if selection is "", show menu again
-
-            switch (selection.charAt(0)) {
-                case 'q':
-                    System.out.println("\nThank you.");
-                    return;
-
-                case 'a':
-                    for (Object treeKey : treeMap.keySet())
-                        System.out.println(treeKey);
-
-            }
         }
     }
-}
